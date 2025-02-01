@@ -39,11 +39,6 @@
 
             while (output[minIndex] < targetChips)
             {
-                foreach (var el in output)
-                {
-                    Console.Write($"{el} ");
-                }
-                Console.WriteLine();
                 int indexSteps = output.Count / 2;
                 for (int i = 1; i <= indexSteps; i++)
                 {
@@ -79,12 +74,6 @@
                     }
                 }
             }
-
-            foreach (var el in output)
-            {
-                Console.Write($"{el} ");
-            }
-            Console.WriteLine();
 
             return stepCount;
         }
