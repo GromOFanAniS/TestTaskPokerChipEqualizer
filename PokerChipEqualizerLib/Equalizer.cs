@@ -37,7 +37,7 @@
                 return stepCount;
             }
 
-            while (output[minIndex] < targetChips)
+            while (!IsEqualized(output))
             {
                 int indexSteps = output.Count / 2;
                 for (int i = 1; i <= indexSteps; i++)
@@ -64,6 +64,8 @@
 
                 if (!IsEqualized(output))
                 {
+                    minIndex = 0;
+                    minValue = output[minIndex];
                     for (int i = 0; i < output.Count; i++)
                     {
                         if (output[i] < targetChips && output[i] < minValue)
