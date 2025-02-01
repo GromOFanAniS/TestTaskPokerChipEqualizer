@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace PokerChipEqualizerLib
 {
-    internal static class ListExtensions
+    public static class ListExtensions
     {
         public static int MyIndex(this IList<int> list, int index)
         {
-            return 0;
+            if (index >= list.Count)
+            {
+                throw new IndexOutOfRangeException();
+            }
+
+            if (index >= 0)
+            {
+                return list[index];
+            }
+
+            return list[index + list.Count];
         }
     }
 }
