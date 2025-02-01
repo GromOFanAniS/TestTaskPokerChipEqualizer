@@ -12,7 +12,7 @@ namespace PokerChipEqualizerLib
         {
             if (index >= list.Count)
             {
-                throw new IndexOutOfRangeException();
+                return list.MyIndexValue(index - list.Count);
             }
 
             if (index >= 0)
