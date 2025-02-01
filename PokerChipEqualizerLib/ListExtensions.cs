@@ -9,6 +9,9 @@ namespace PokerChipEqualizerLib
     public static class ListExtensions
     {
         public static int MyIndexValue(this IList<int> list, int index)
+        {
+            return list[list.MyIndex(index)];
+        }
 
         public static int MyIndex(this IList<int> list, int index)
         {
