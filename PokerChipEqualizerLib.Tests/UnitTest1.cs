@@ -26,6 +26,13 @@ namespace PokerChipEqualizerLib.Tests
         }
 
         [Fact]
+        public void Test4()
+        {
+            int[] chips = { 1, 1, 2, 4 };
+            Assert.Equal(3, Equalizer.EqualizeSteps(chips));
+        }
+
+        [Fact]
         public void MyIndexTest1()
         {
             List<int> ints = new List<int>(){ 1, 2, 3, 4, 5 };
