@@ -8,7 +8,7 @@ namespace PokerChipEqualizerLib
 {
     public static class ListExtensions
     {
-        public static int MyIndex(this IList<int> list, int index)
+        public static int MyIndexValue(this IList<int> list, int index)
         {
             if (index >= list.Count)
             {
