@@ -46,12 +46,6 @@
 
             while (!IsEqualized(output))
             {
-                foreach (var el in output)
-                {
-                    Console.Write($"{el} ");
-                }
-                Console.WriteLine("");
-
                 greaterList = GetListGreaterThanTarget(output).OrderByDescending(x => x.value).ToList();
 
                 if (greaterIndex >= greaterList.Count)
